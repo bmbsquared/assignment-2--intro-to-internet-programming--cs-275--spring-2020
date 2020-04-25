@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/code-warrior/assignment-2--intro-to-internet-programming--cs-275--spring-2020/issues"
   },
-  "homepage": "https://github.com/code-warrior/assignment-2--intro-to-internet-programming--cs-275--spring-2020#readme"
+  "homepage": "https://github.com/code-warrior/assignment-2--intro-to-internet-programming--cs-275--spring-2020#readme",
+  "devDependencies": {
+    "gulp-htmlmin": "^5.0.1"
+  }
 }
