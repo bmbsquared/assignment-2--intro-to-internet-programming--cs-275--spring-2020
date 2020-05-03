@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment two</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <script>
+  function check(){
+      const typed = document.getElementById(`rice-type`).value ;
+      const x =document.getElementById(`rice`).value;
+      const water= x*1.6;
+      const oil = x*.05;
+       const output = document.writeln(`Ounces of Rice: ` + x + ` Ounces of Water: `  + water
+       +` Ounces of oil: ` + oil + " "+ typed);
+       return output;
+
+  }
+  </script>
+  <h1>Rice recipes</h1>
+  <form name="rice-recipe">
+
+      <div>
+          <label> Type of Rice</label>
+
+      <div>
+      <div>
+        <select name="type" id="rice-type">
+          <option value="For slightly al dente rice: Combine the amount of rice with the water or broth and 1  olive oil.
+           Bring to a boil and stir once to mix. Reduce heat to low, cover with a tight-fitting lid and cook for 25 minutes.
+           Remove from heat and let stand for 5 minutes. Fluff with a fork and serve.
+           For softer rice: Increase liquid by 1/2 cup and cook time by 5 minutes.">
+            California Sprouted Rice</option>
+          <option value="Combine the rice with water and  olive oil. Bring to a boil,
+          then reduce heat to the lowest setting. Cook for about 18 minutes.">
+            White Rice</option>
+        </select>
+      </div>
+      </div>
+      </div>
+      <div>
+          <label for="rice">Amount of Rice (in ounces)</label>
+          <input type="number" name ="rice" id="rice" value="10">
+      </div>
+      <input type="submit" value="Submit" onclick="check()">
+  </form>
+  <p id="f1"></p>
+</body>
+</html>
